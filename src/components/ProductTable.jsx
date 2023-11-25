@@ -9,14 +9,16 @@ export default function ProductTable({products, filterText, inStockOnly}) {
 
     products.forEach((product)=>{
 
-        if (product.name.toLowerCase().indexOf(
-              filterText.toLowerCase()) === -1){
-                return;
-              }
-
-        if(inStockOnly && !product.stoked){
-            return;
-        }
+        // if (
+        //     product.name.toLowerCase().indexOf(
+        //       filterText.toLowerCase()
+        //     ) === -1
+        //   ) {
+        //     return;
+        //   }
+        //   if (inStockOnly && !product.stocked) {
+        //     return;
+        //   }
 
         if (product.category !== lastCategory){
             rows.push(

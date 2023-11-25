@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Searchbar from './Searchbar';
 import ProductTable from './ProductTable';
 
 export default function FilterableProductTable({products}) {
 
-  const {filterText, setFilterText} = ('');
-  const {inStockOnly, setInStockOnly} = (false)
+  const {filterText, setFilterText} = useState('');
+  const {inStockOnly, setInStockOnly} = useState(false);
 
   return (
     <div>
